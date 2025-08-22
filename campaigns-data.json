@@ -1,0 +1,478 @@
+[
+  {
+    "id": "camp_1755842103814_6dslc3ycn",
+    "name": "Campaign 8/22/2025 11:25:03 AM",
+    "templateName": "hello_world",
+    "status": "completed",
+    "createdAt": "2025-08-22T05:55:04.002Z",
+    "totalContacts": 4,
+    "sentCount": 4,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 0,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.2,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "John Doe",
+        "email": "john@example.com",
+        "company": "Example Corp",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSQzc2QUY2RjZEMUJEMzY2QTVFAA==",
+        "sentAt": "2025-08-22T05:55:05.285Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "919788288496",
+        "name": "Jane Smith",
+        "email": "jane@test.com",
+        "company": "Test Industries",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSRTZBREYyNzU1NDFBRUMzQzY1AA==",
+        "sentAt": "2025-08-22T05:55:07.391Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "917123456789",
+        "name": "Bob Johnson",
+        "email": "bob@company.com",
+        "company": "Company Inc",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE3MTIzNDU2Nzg5FQIAERgSQkFCQTFGMEFDOEJDRDgyRkIyAA==",
+        "sentAt": "2025-08-22T05:55:09.046Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "918567890123",
+        "name": "Alice Brown",
+        "email": "alice@business.com",
+        "company": "Business LLC",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE4NTY3ODkwMTIzFQIAERgSQURFNTg3OEMxN0U1QzA2MjlFAA==",
+        "sentAt": "2025-08-22T05:55:10.783Z",
+        "retryCount": 0
+      }
+    ],
+    "startedAt": "2025-08-22T05:55:04.023Z",
+    "completedAt": "2025-08-22T05:55:10.841Z"
+  },
+  {
+    "id": "camp_1755844015765_d41c3f5we",
+    "name": "Campaign 8/22/2025 11:56:55 AM",
+    "templateName": "hello_world",
+    "status": "completed",
+    "createdAt": "2025-08-22T06:26:55.819Z",
+    "totalContacts": 2,
+    "sentCount": 2,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 0,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSNkZBRDIxQ0E2RkY1NjE5QkU5AA==",
+        "sentAt": "2025-08-22T06:26:57.594Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSQjM3ODA1NzZDMjBGMjJFM0E2AA==",
+        "sentAt": "2025-08-22T06:26:59.751Z",
+        "retryCount": 0
+      }
+    ],
+    "startedAt": "2025-08-22T06:26:55.843Z",
+    "completedAt": "2025-08-22T06:26:59.815Z"
+  },
+  {
+    "id": "camp_1755856031359_rhywjimxo",
+    "name": "Campaign 8/22/2025 3:17:11 PM",
+    "templateName": "hello_world",
+    "status": "completed",
+    "createdAt": "2025-08-22T09:47:11.428Z",
+    "totalContacts": 2,
+    "sentCount": 2,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 0,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSQjUyOEI1QTIzRUYxMEQ2MDc4AA==",
+        "sentAt": "2025-08-22T09:47:13.604Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSMDUxNzI4MjlFNUUxNDU5QzgxAA==",
+        "sentAt": "2025-08-22T09:47:15.852Z",
+        "retryCount": 0
+      }
+    ],
+    "startedAt": "2025-08-22T09:47:11.459Z",
+    "completedAt": "2025-08-22T09:47:15.940Z"
+  },
+  {
+    "id": "camp_1755864779216_xba2bg8zs",
+    "name": "Campaign 8/22/2025 5:42:59 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:12:59.275Z",
+    "totalContacts": 2,
+    "sentCount": 0,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 2,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1,
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSMzRGNkY0RjdDNEIyMjVBOTFEAA==",
+        "sentAt": "2025-08-22T12:33:31.756Z"
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1,
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSQUJDMkY0ODFDRkI1MDU3OTIwAA==",
+        "sentAt": "2025-08-22T12:33:33.758Z"
+      }
+    ],
+    "startedAt": "2025-08-22T12:12:59.297Z",
+    "completedAt": "2025-08-22T12:13:01.752Z"
+  },
+  {
+    "id": "camp_1755864793232_in4hlaomm",
+    "name": "Campaign 8/22/2025 5:43:13 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:13:13.299Z",
+    "totalContacts": 2,
+    "sentCount": 0,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 2,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1,
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSNjIwMDRCRDNBQTNCNkUzQjZEAA==",
+        "sentAt": "2025-08-22T12:40:32.916Z"
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1,
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSMzlDMkI1RjA3NUM1QUQ0RTU4AA==",
+        "sentAt": "2025-08-22T12:40:35.055Z"
+      }
+    ],
+    "startedAt": "2025-08-22T12:13:13.345Z",
+    "completedAt": "2025-08-22T12:13:15.344Z"
+  },
+  {
+    "id": "camp_1755864997914_sana7hw28",
+    "name": "Campaign 8/22/2025 5:46:37 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:16:38.002Z",
+    "totalContacts": 2,
+    "sentCount": 0,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 2,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      }
+    ],
+    "startedAt": "2025-08-22T12:16:38.033Z",
+    "completedAt": "2025-08-22T12:16:41.250Z"
+  },
+  {
+    "id": "camp_1755865728640_9ls8qx6qz",
+    "name": "Campaign 8/22/2025 5:58:48 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:28:48.725Z",
+    "totalContacts": 2,
+    "sentCount": 0,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 2,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      }
+    ],
+    "startedAt": "2025-08-22T12:28:48.750Z",
+    "completedAt": "2025-08-22T12:28:51.514Z"
+  },
+  {
+    "id": "camp_1755865741401_re9ikk8m0",
+    "name": "Campaign 8/22/2025 5:59:01 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:29:01.486Z",
+    "totalContacts": 2,
+    "sentCount": 0,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 2,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      }
+    ],
+    "startedAt": "2025-08-22T12:29:01.512Z",
+    "completedAt": "2025-08-22T12:29:03.961Z"
+  },
+  {
+    "id": "camp_1755865804958_57em1tds3",
+    "name": "Campaign 8/22/2025 6:00:04 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:30:05.039Z",
+    "totalContacts": 2,
+    "sentCount": 0,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 2,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "failed",
+        "errorMessage": "Phone validation failed: Invalid phone number",
+        "retryCount": 1
+      }
+    ],
+    "startedAt": "2025-08-22T12:30:05.066Z",
+    "completedAt": "2025-08-22T12:30:07.618Z"
+  },
+  {
+    "id": "camp_1755866010105_jg08fobhp",
+    "name": "Campaign 8/22/2025 6:03:30 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:33:30.162Z",
+    "totalContacts": 2,
+    "sentCount": 2,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 0,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.1,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSMzRGNkY0RjdDNEIyMjVBOTFEAA==",
+        "sentAt": "2025-08-22T12:33:31.756Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSQUJDMkY0ODFDRkI1MDU3OTIwAA==",
+        "sentAt": "2025-08-22T12:33:33.757Z",
+        "retryCount": 0
+      }
+    ],
+    "startedAt": "2025-08-22T12:33:30.184Z",
+    "completedAt": "2025-08-22T12:33:33.815Z"
+  },
+  {
+    "id": "camp_1755866431673_pm3p0xagm",
+    "name": "Campaign 8/22/2025 6:10:31 PM",
+    "templateName": "interview_reschedule_notification_22",
+    "status": "completed",
+    "createdAt": "2025-08-22T12:40:31.760Z",
+    "totalContacts": 4,
+    "sentCount": 4,
+    "deliveredCount": 0,
+    "readCount": 0,
+    "failedCount": 0,
+    "duplicateCount": 0,
+    "clickCount": 0,
+    "ctr": 0,
+    "estimatedCost": 0.2,
+    "contacts": [
+      {
+        "phone": "919940804585",
+        "name": "Naveen",
+        "email": "naveen@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5OTQwODA0NTg1FQIAERgSNjIwMDRCRDNBQTNCNkUzQjZEAA==",
+        "sentAt": "2025-08-22T12:40:32.916Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "919788288496",
+        "name": "Santhi",
+        "email": "santhi@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE5Nzg4Mjg4NDk2FQIAERgSMzlDMkI1RjA3NUM1QUQ0RTU4AA==",
+        "sentAt": "2025-08-22T12:40:35.055Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "916383681221",
+        "name": "Sridhar",
+        "email": "sridhar@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE2MzgzNjgxMjIxFQIAERgSMTM5OUM2Q0NBODZCM0EyRTYwAA==",
+        "sentAt": "2025-08-22T12:40:36.801Z",
+        "retryCount": 0
+      },
+      {
+        "phone": "918144162853",
+        "name": "Prakash",
+        "email": "prakash@cdp360.com",
+        "company": "CDP360",
+        "status": "sent",
+        "messageId": "wamid.HBgMOTE4MTQ0MTYyODUzFQIAERgSMzc3NTE0NzQxRUZFQTVBQjhBAA==",
+        "sentAt": "2025-08-22T12:40:38.680Z",
+        "retryCount": 0
+      }
+    ],
+    "startedAt": "2025-08-22T12:40:31.791Z",
+    "completedAt": "2025-08-22T12:40:38.737Z"
+  }
+]
