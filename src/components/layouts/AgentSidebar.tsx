@@ -105,7 +105,8 @@ const agentSidebarRoutes = [
     permission: "integrations.manage",
     submenu: [
       { label: "Lusha Integration", icon: Users, href: "/agent/integrations/lusha" },
-      { label: "LinkedIn Sales Navigator", icon: Linkedin, href: "/agent/integrations/linkedin" }
+      { label: "LinkedIn Sales Navigator", icon: Linkedin, href: "/agent/integrations/linkedin" },
+      { label: "Apollo.io", icon: Target, href: "/agent/integrations/apollo" }
     ]
   },
   { 
