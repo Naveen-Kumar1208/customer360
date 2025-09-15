@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { StaticExportLayout } from "@/components/layouts/StaticExportLayout";
+import { DashboardLayout } from "@/components/layouts/DashboardLayout";
+import { AuthGuard } from "@/app/authGuard";
 import { StatCard } from "@/components/dashboard/StatCard";
 import { AreaChart } from "@/components/dashboard/AreaChart";
 import { BarChart } from "@/components/dashboard/BarChart";
@@ -59,8 +60,22 @@ const iconKeys = ['users', 'percent', 'clock', 'bounce'] as const;
 export default function Dashboard() {
   const [timeFilter, setTimeFilter] = useState('Day');
   const [isMounted, setIsMounted] = useState(false);
-  const { user, isLoading } = useAuth();
+  const { user, isLoading, isAuthenticated } = useAuth();
   const router = useRouter();
+  
+  // Redirect based on user role
+  useEffect(() => {
+    if (!isLoading && isAuthenticated && user) {
+      if (user.role === 'agent') {
+        router.replace('/agent/dashboard');
+        return;
+      } else if (user.role === 'investor') {
+        router.replace('/investor/dashboard');
+        return;
+      }
+      // Organization/admin users stay on main dashboard
+    }
+  }, [user, isAuthenticated, isLoading, router]);
 
   // Prevent hydration mismatch
   useEffect(() => {
@@ -399,8 +414,21 @@ export default function Dashboard() {
   const dynamicActivityLog = getDynamicActivityLog();
   const dynamicConsentData = getDynamicConsentData();
 
+  // Show loading if redirecting
+  if (!isLoading && isAuthenticated && user && (user.role === 'agent' || user.role === 'investor')) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-[#f6f8fb]">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mx-auto mb-2"></div>
+          <p>Redirecting...</p>
+        </div>
+      </div>
+    );
+  }
+  
   return (
-    <StaticExportLayout>
+    <AuthGuard>
+      <DashboardLayout>
       {/* Show loading while initializing */}
       {(isMounted && isLoading) ? (
         <div className="flex items-center justify-center h-full">
@@ -511,6 +539,7 @@ export default function Dashboard() {
           </div>
         </div>
       )}
-    </StaticExportLayout>
+      </DashboardLayout>
+    </AuthGuard>
   );
 }

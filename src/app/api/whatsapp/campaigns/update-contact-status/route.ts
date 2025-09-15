@@ -50,15 +50,15 @@ export async function POST(request: NextRequest) {
 
     console.log('📊 Updating contact status:', { messageId, phone, status, timestamp });
 
-    // Load campaigns from file
-    const campaigns = loadCampaigns();
+    // Load campaigns from memory
+    const campaignsData = loadCampaigns();
 
     // Try to find which campaign this message belongs to
     let campaignId = messageIdToCampaignId.get(messageId);
     
     if (!campaignId) {
       // Search through all campaigns to find the message
-      for (const [id, campaign] of campaigns.entries()) {
+      for (const [id, campaign] of campaignsData.entries()) {
         const contact = campaign.contacts?.find((c: any) => 
           (c.phone === phone && c.messageId === messageId) || 
           (c.phone === phone && !c.messageId) // For contacts without messageId yet
@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
 
     // If still not found, try to find by phone number only (for initial sent status)
     if (!campaignId) {
-      for (const [id, campaign] of campaigns.entries()) {
+      for (const [id, campaign] of campaignsData.entries()) {
         const contact = campaign.contacts?.find((c: any) => c.phone === phone);
         if (contact) {
           campaignId = id;
@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const campaign = campaigns.get(campaignId);
+    const campaign = campaignsData.get(campaignId);
     if (!campaign) {
       return NextResponse.json(
         { error: 'Campaign not found' },
@@ -149,9 +149,9 @@ export async function POST(request: NextRequest) {
         break;
     }
 
-    // Save updated campaign
-    campaigns.set(campaignId, campaign);
-    saveCampaigns(campaigns); // Persist to file
+    // Save updated campaign in memory
+    campaignsData.set(campaignId, campaign);
+    // Note: Changes only persist for this function execution in serverless environment
 
     console.log(`✅ Contact status updated in campaign ${campaignId}:`, {
       phone,

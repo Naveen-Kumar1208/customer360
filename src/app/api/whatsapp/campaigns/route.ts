@@ -32,48 +32,61 @@ interface WhatsAppCampaign {
   contacts: CampaignContact[];
 }
 
-import { writeFileSync, readFileSync, existsSync } from 'fs';
-import { join } from 'path';
-
-// File-based storage for persistence (in production, use a database)
-const CAMPAIGNS_FILE = join(process.cwd(), 'campaigns-data.json');
-
-// In-memory storage with file persistence
+// In-memory storage for serverless environment
+// Note: Data will not persist between serverless function calls
+// For production, implement a proper database (PostgreSQL, MongoDB, etc.)
 const campaigns = new Map<string, WhatsAppCampaign>();
 
-// Load existing campaigns from file
-function loadCampaigns() {
-  try {
-    if (existsSync(CAMPAIGNS_FILE)) {
-      const data = readFileSync(CAMPAIGNS_FILE, 'utf-8');
-      const campaignsArray = JSON.parse(data);
-      campaignsArray.forEach((campaign: WhatsAppCampaign) => {
-        campaigns.set(campaign.id, campaign);
-      });
-      console.log(`📊 Loaded ${campaignsArray.length} campaigns from file`);
-    } else {
-      console.log('📊 No existing campaigns file found, starting fresh');
+// Initialize with some sample data for demo purposes
+if (campaigns.size === 0) {
+  const sampleCampaigns: WhatsAppCampaign[] = [
+    {
+      id: 'camp_demo_001',
+      name: 'Welcome Campaign',
+      templateName: 'welcome_template',
+      status: 'completed',
+      createdAt: new Date(Date.now() - 86400000).toISOString(),
+      startedAt: new Date(Date.now() - 86400000 + 3600000).toISOString(),
+      completedAt: new Date(Date.now() - 86400000 + 7200000).toISOString(),
+      totalContacts: 100,
+      sentCount: 95,
+      deliveredCount: 90,
+      readCount: 75,
+      failedCount: 5,
+      duplicateCount: 0,
+      clickCount: 20,
+      ctr: 26.7,
+      estimatedCost: 5.0,
+      contacts: []
+    },
+    {
+      id: 'camp_demo_002',
+      name: 'Product Update',
+      templateName: 'product_update',
+      status: 'running',
+      createdAt: new Date(Date.now() - 3600000).toISOString(),
+      startedAt: new Date(Date.now() - 1800000).toISOString(),
+      totalContacts: 250,
+      sentCount: 150,
+      deliveredCount: 140,
+      readCount: 85,
+      failedCount: 10,
+      duplicateCount: 0,
+      clickCount: 15,
+      ctr: 17.6,
+      estimatedCost: 12.5,
+      contacts: []
     }
-  } catch (error) {
-    console.error('❌ Error loading campaigns from file:', error);
-  }
+  ];
+  
+  sampleCampaigns.forEach(campaign => {
+    campaigns.set(campaign.id, campaign);
+  });
+  
+  console.log(`📊 Initialized with ${campaigns.size} sample campaigns`);
 }
 
-// Save campaigns to file
-function saveCampaigns() {
-  try {
-    const campaignsArray = Array.from(campaigns.values());
-    writeFileSync(CAMPAIGNS_FILE, JSON.stringify(campaignsArray, null, 2));
-    console.log(`💾 Saved ${campaignsArray.length} campaigns to file`);
-  } catch (error) {
-    console.error('❌ Error saving campaigns to file:', error);
-  }
-}
-
-// Initialize campaigns
-loadCampaigns();
-
-console.log(`📊 Campaign storage initialized with ${campaigns.size} campaigns`);
+console.log(`📊 Campaign storage ready with ${campaigns.size} campaigns`);
 
 // GET - Retrieve all campaigns with optional filtering
 export async function GET(request: NextRequest) {
@@ -190,7 +203,7 @@ export async function POST(request: NextRequest) {
     };
 
     campaigns.set(campaignId, newCampaign);
-    saveCampaigns(); // Persist to file
+    // Note: In serverless environment, data only persists for this function execution
 
     console.log('✅ Campaign created in API:', {
       campaignId,
@@ -265,7 +278,7 @@ export async function PUT(request: NextRequest) {
     }
 
     campaigns.set(campaignId, campaign);
-    saveCampaigns(); // Persist to file
+    // Note: In serverless environment, data only persists for this function execution
 
     console.log('📊 Campaign updated:', {
       campaignId,
