@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from 'next/server';
 
-export const dynamic = 'force-static';
+export const dynamic = 'force-dynamic';
 
 const LUSHA_API_BASE_URL = 'https://api.lusha.com';
 const LUSHA_API_KEY = process.env.LUSHA_API_KEY || 'your-real-lusha-api-key-here';
